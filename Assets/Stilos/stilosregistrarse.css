@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*color degrade*/
+    background:#adadad;
+    /*para que el color este por toda la pantalla*/
+    height: 100vh;
+}
+    
+/*esto es una clase :D*/
+.formulario {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: azure;
+    border-radius: 10px;
+
+}
+
+.formulario h2 {
+    text-align: center;
+    padding: 0 0 -5px 0;
+}
+
+.formulario h6 {
+    text-align: center;
+    padding: 0 0 -10px 0;
+
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+
+/*esto es para los divs*/
+form .conti {
+    position: relative;
+    margin: 10px 0;
+}
+
+.conti input {
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: 2px;
+    background: none;
+}
+
+
+
+form .gmails {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 10px 40px;
+}
+
+.gmails input {
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.gmails label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .3s;
+
+}
+
+.gmails span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+
+}
+
+.gmails input:focus~label,
+.gmails input:focus~label {
+    top: -5px;
+    color: black;
+}
+
+.gmails input:focus~span::before,
+.gmails input:focus~span::before {
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin: 20px 0;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    color: azure;
+    background: #2874A6;
+    cursor: pointer;
+    outline: none;
+}
+
+.capchat {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin: px 0;
+    color: black;
+
+}
+
+.modal-sheet .modal-dialog {
+    width: 380px;
+    
+    transition: bottom .75s ease-in-out;
+}
+
+.modal-sheet .modal-footer {
+    padding-bottom: 2rem;
+}
